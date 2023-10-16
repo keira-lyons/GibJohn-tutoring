@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GibJohn tutoring</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/Logo.JPG">
+  </head>
+  <body>
+      <h1>GibJohn tutoring</h1>
+      <h2>Log in</h2>
+      <form action="/validation.php" method = 'POST'>
+        <label for="Username">Username:</label>
+        <br>
+        <input id="Username" name="Username" type="text" minlength = "3" maxlength="200" required>
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+        <input id="pw" name="pw" type="password" minlength = "8" maxlength="100" required>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+  </body>
