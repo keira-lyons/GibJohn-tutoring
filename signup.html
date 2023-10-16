@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.JPG">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Sign Up</h1>
+      <p>Create an account:</p>
+      <form action="/data.php" method="POST">
+        <label for="firstname">Firstname:</label>
+        <br>
+        <input id="firstname" name="firstname" type="text" minlength = "3" maxlength="15" required pattern="[a-zA-Z]+"  required>
+        <br>
+        <label for="surname">Surname:</label>
+        <br>
+        <input id="surname" name="surname" type="text" minlength = "3" maxlength="15" required pattern="[a-zA-Z]+"  required>
+        <br>
+        <label for="email">email:</label>
+        <br>
+        <input id="email" name="email" type="text" minlength = "11" maxlength="200"  required>
+        <br>
+        <label for="username">Username:</label>
+        <br>
+        <input id="username" name="username" type="text" minlength = "3" maxlength="15" required pattern="[a-zA-Z0-9]+"  required>
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+        <input id="pw" name="pw" type="password" minlength = "8" maxlength="15" required>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>
